@@ -4,7 +4,7 @@ import sys
 import boto3
 
 
-def upload_to_s3(bucket, key, file_path, callback=None, md5=None, reduced_redundancy=False, content_type=None):
+def upload_to_s3(bucket, key, file_path):
 
     s3 = boto3.resource('s3')
 
